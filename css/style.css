@@ -321,7 +321,6 @@ p {
   padding: 0;
   border: 0;
   margin: 0;
-  fill: var(--primary-white-color);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -331,6 +330,11 @@ p {
   border-radius: 50%;
   background: var(--primary-white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.button-exit:focus,
+.button-exit:hover {
+  background: var(--brand-color);
+  fill: var(--primary-white-color);
 }
 .section-feature {
   padding-top: 94px;
