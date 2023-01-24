@@ -21,7 +21,11 @@
           <a class="logo" href="index.html">Webstudio</a>
           <ul class="list header-pages">
             <li id="current" class="list-item">
-              <a class="list link-pages current" href="index.html">Studio</a>
+              <a
+                class="list link-pages current underlined-index"
+                href="index.html"
+                >Studio</a
+              >
             </li>
             <li class="list-item">
               <a class="list link-pages portfolio" href="portfolio.html"
@@ -67,19 +71,6 @@
           <button data-modal-open class="hero buttom" type="button">
             Request our service
           </button>
-          <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-              <p class="text-modal">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio
-                voluptates cum quasi veniam quaerat adipisci minima non.
-                Perferendis velit eveniet omnis beatae, pariatur voluptatibus
-                veniam rerum dolorem, et quam voluptatum!
-              </p>
-              <button data-modal-close class="button-exit" type="button">
-                x
-              </button>
-            </div>
-          </div>
         </div>
       </section>
       <section class="section-feature">
@@ -152,8 +143,8 @@
         <div class="container work-section">
           <h2 class="subtitle-work">What we do</h2>
           <ul class="list photos-work">
-            <div class="container-image-work-1">
-              <li class="work-images">
+            <li class="work-images">
+              <div class="container-image-work-1">
                 <img
                   class="image-work-section"
                   src="./images/img1.jpg"
@@ -163,10 +154,11 @@
                 <div class="text-work">
                   <h3 class="text-photos-work">aplicaciones de escritorio</h3>
                 </div>
-              </li>
-            </div>
-            <div class="container-image-work-2">
-              <li class="work-images">
+              </div>
+            </li>
+
+            <li class="work-images">
+              <div class="container-image-work-2">
                 <img
                   class="image-work-section"
                   src="./images/img2.jpg"
@@ -176,10 +168,11 @@
                 <div class="text-work">
                   <h3 class="text-photos-work">aplicaciones moviles</h3>
                 </div>
-              </li>
-            </div>
-            <div class="container-image-work-3">
-              <li class="work-images">
+              </div>
+            </li>
+
+            <li class="work-images">
+              <div class="container-image-work-3">
                 <img
                   class="image-work-section"
                   src="./images/img3.jpg"
@@ -189,8 +182,8 @@
                 <div class="text-work">
                   <h3 class="text-photos-work">soluciones de diseño</h3>
                 </div>
-              </li>
-            </div>
+              </div>
+            </li>
           </ul>
         </div>
       </section>
@@ -504,6 +497,21 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p class="text-modal">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio
+          voluptates cum quasi veniam quaerat adipisci minima non. Perferendis
+          velit eveniet omnis beatae, pariatur voluptatibus veniam rerum
+          dolorem, et quam voluptatum!
+        </p>
+        <button data-modal-close class="button-exit" type="button">
+          <svg width="30" height="30">
+            <use href="./images/symbol-defs.svg#icon-close-1"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
