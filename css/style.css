@@ -75,7 +75,7 @@ p {
   height: 4px;
   background-color: var(--brand-color);
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
   border-radius: 2px;
 }
 
@@ -105,8 +105,8 @@ p {
 .list-contact:focus {
   color: var(--brand-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) box-shadow 250ms
-      cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon {
@@ -117,8 +117,8 @@ p {
 .icon-contact:focus {
   fill: var(--brand-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) box-shadow 250ms
-      cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
 
@@ -163,8 +163,8 @@ p {
   color: var(--brand-color);
   outline: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) box-shadow 250ms
-      cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo {
@@ -213,8 +213,8 @@ p {
 .link:focus {
   color: var(--brand-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) box-shadow 250ms
-      cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-section {
   background: var(--primary-background-color);
@@ -271,8 +271,8 @@ p {
 .hero.button:hover {
   outline: var(--brand-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) box-shadow 250ms
-      cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop {
   position: fixed;
@@ -304,7 +304,8 @@ p {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .text-modal {
-  padding-top: 50px;
+  padding: 50px 20px 0px 20px;
+  margin: 0px;
 }
 .button-exit {
   position: absolute;
@@ -409,9 +410,9 @@ p {
   background-color: rgba(47, 48, 58, 0.8);
   padding-bottom: 27px;
   padding-top: 27px;
+  display: flex;
   justify-content: center;
   margin-bottom: 0;
-  justify-content: center;
 }
 .text-photos-work {
   margin-bottom: 0;
@@ -534,8 +535,9 @@ p {
   fill: white;
   border-radius: 50%;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) box-shadow 250ms
-      cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .customer-section {
@@ -580,8 +582,9 @@ p {
   border: 1px solid var(--brand-color);
   border-radius: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) box-shadow 250ms
-      cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-section {
@@ -629,8 +632,8 @@ p {
 .contacts:focus {
   color: var(--brand-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) box-shadow 250ms
-      cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link.site {
   font-style: normal;
@@ -665,8 +668,8 @@ p {
   background-color: var(--brand-color);
   outline: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) box-shadow 250ms
-      cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-social-section {
@@ -688,8 +691,8 @@ p {
 .link.site:focus {
   color: var(--brand-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) box-shadow 250ms
-      cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-media {
   font-style: normal;
@@ -731,8 +734,8 @@ p {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) box-shadow 250ms
-      cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-button {
   display: flex;
@@ -760,8 +763,8 @@ p {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) box-shadow 250ms
-      cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .feature-portfolio {
@@ -771,10 +774,13 @@ p {
   padding-top: 20px;
   padding-left: 24px;
   padding-right: 24px;
+  width: 370px;
+  position: relative;
 }
 .link-poster {
-  max-width: 370px;
-  max-height: 294px;
+  width: 370px;
+  outline: none;
+  text-decoration: none;
 }
 .description {
   font-style: normal;
@@ -800,6 +806,7 @@ p {
 .text-mask {
   position: absolute;
   top: 294px;
+  left: 0;
   width: 370px;
   height: 294px;
   font-weight: 400;
@@ -820,10 +827,8 @@ p {
   opacity: 1;
   transform: translateY(-294px);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) box-shadow 250ms
-      cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
+  text-decoration: none;
 }
 
 .current {
