@@ -67,6 +67,7 @@ p {
   list-style: none;
   height: 50px;
   position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .current::after {
   content: '';
@@ -75,7 +76,7 @@ p {
   height: 4px;
   background-color: var(--brand-color);
   position: absolute;
-  bottom: -5px;
+  bottom: -2px;
   border-radius: 2px;
 }
 
@@ -100,25 +101,20 @@ p {
   margin-top: 0;
   padding-left: 0;
   gap: 10px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-contact:hover,
 .list-contact:focus {
   color: var(--brand-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon {
   z-index: 2;
-  fill: gray;
+  fill: var(--fill-icon);
 }
 .icon-contact:hover,
 .icon-contact:focus {
   fill: var(--brand-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
 
@@ -126,9 +122,6 @@ p {
 .icon:hover {
   fill: var(--brand-color);
   outline: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) box-shadow 250ms
-      cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-item {
@@ -154,17 +147,11 @@ p {
 .link:focus {
   color: var(--brand-color);
   outline: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) box-shadow 250ms
-      cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-pages:focus,
 .link-pages:hover {
   color: var(--brand-color);
   outline: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo {
@@ -192,29 +179,24 @@ p {
   text-decoration: none;
   list-style: none;
 }
-.link.contact {
+.link.contacts {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  color: #757575;
+  color: var(--primary-enlace-color);
   text-decoration: none;
   list-style: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link.contact:hover,
-.link.contact:focus {
+.link.contacts:hover,
+.link.contacts:focus {
   color: var(--brand-color);
   outline: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) box-shadow 250ms
-      cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link:hover,
 .link:focus {
   color: var(--brand-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-section {
   background: var(--primary-background-color);
@@ -266,13 +248,13 @@ p {
   border-radius: 4px;
   cursor: pointer;
   padding: 10px 32px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero.button:focus,
 .hero.button:hover {
   outline: var(--brand-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop {
   position: fixed;
@@ -283,8 +265,8 @@ p {
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 1;
   visibility: visible;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) visibility 250ms
-    cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   visibility: hidden;
@@ -323,6 +305,8 @@ p {
   border-radius: 50%;
   background: var(--primary-white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-exit:focus,
 .button-exit:hover {
@@ -528,15 +512,15 @@ p {
   justify-content: center;
   width: 44px;
   height: 44px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-team:hover,
 .icon-team:focus {
   background-color: var(--brand-color);
-  fill: white;
+  fill: var(--primary-white-color);
   border-radius: 50%;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   outline: none;
 }
 
@@ -576,15 +560,13 @@ p {
   align-items: center;
   width: 170px;
   height: 81px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-customer:hover,
 .icon-customer:focus {
   border: 1px solid var(--brand-color);
   border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-section {
@@ -631,9 +613,6 @@ p {
 .contacts:hover,
 .contacts:focus {
   color: var(--brand-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link.site {
   font-style: normal;
@@ -641,6 +620,7 @@ p {
   font-size: 14px;
   color: var(--primary-white-color);
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-item {
   margin-bottom: 2px;
@@ -653,6 +633,8 @@ p {
   cursor: pointer;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-footer-social {
   fill: var(--primary-white-color);
@@ -667,9 +649,6 @@ p {
 .icon-footer-social:focus {
   background-color: var(--brand-color);
   outline: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-social-section {
@@ -690,9 +669,6 @@ p {
 .link.site:hover,
 .link.site:focus {
   color: var(--brand-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-media {
   font-style: normal;
@@ -707,6 +683,9 @@ p {
 }
 .item-button {
   margin-right: 8px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .item-button:last-child {
   margin-right: 0;
@@ -725,6 +704,9 @@ p {
   text-transform: capitalize;
   cursor: pointer;
   padding: 6px 18px 6px 18px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 .button:focus {
@@ -733,9 +715,6 @@ p {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-button {
   display: flex;
@@ -756,15 +735,12 @@ p {
   flex-basis: calc((100% - 60px) / 3);
   cursor: pointer;
   padding-bottom: 0;
-  position: relative;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .container-portfolio:hover,
 .container-portfolio:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .feature-portfolio {
@@ -775,12 +751,12 @@ p {
   padding-left: 24px;
   padding-right: 24px;
   width: 370px;
-  position: relative;
 }
 .link-poster {
   width: 370px;
   outline: none;
   text-decoration: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .description {
   font-style: normal;
@@ -801,6 +777,10 @@ p {
   color: var(--secondary-text-color);
   text-transform: capitalize;
   margin-bottom: 0px;
+}
+.container-mask {
+  position: relative;
+  overflow: hidden;
 }
 
 .text-mask {
